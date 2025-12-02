@@ -1,0 +1,233 @@
+/* =======================
+    GLOBAL
+======================= */
+.student-courses-container {
+  min-height: 100vh;
+  background: #f1f5f9; /* gris clair pro */
+  font-family: 'Inter', sans-serif;
+}
+
+/* =======================
+    LOADING
+======================= */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #2563eb; /* bleu pro */
+  color: white;
+}
+
+.spinner {
+  width: 55px;
+  height: 55px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  margin-bottom: 1.2rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* =======================
+    HEADER
+======================= */
+.student-courses-header {
+  background: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.back-button {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter {
+  background: #2563eb;
+  color: white;
+  padding: 0.55rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* =======================
+    MAIN
+======================= */
+.student-courses-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* =======================
+    ALERT
+======================= */
+.error-alert {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  margin-bottom: 2rem;
+}
+
+/* =======================
+    EMPTY STATE
+======================= */
+.empty-state {
+  background: white;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+/* =======================
+    GRID
+======================= */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 1.8rem;
+}
+
+/* =======================
+    COURSE CARD
+======================= */
+.course-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.09);
+}
+
+/* =======================
+    COURSE HEADER
+======================= */
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.course-level {
+  background: #e2e8f0;
+  color: #475569;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* =======================
+    DESCRIPTION + META
+======================= */
+.course-description {
+  color: #475569;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.course-meta {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.meta-item {
+  color: #475569;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* =======================
+    ACTIONS
+======================= */
+.course-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.download-button,
+.view-button {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.download-button {
+  background: #16a34a;
+}
+.download-button:hover {
+  background: #0f8a3f;
+}
+
+.view-button {
+  background: #2563eb;
+}
+.view-button:hover {
+  background: #1e4fc8;
+}

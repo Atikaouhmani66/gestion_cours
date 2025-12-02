@@ -1,0 +1,217 @@
+.changer-mdp-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* Sidebar Styles */
+.changer-mdp-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.changer-mdp-sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.changer-mdp-sidebar-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.changer-mdp-sidebar-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #bdc3c7;
+}
+
+.changer-mdp-nav {
+  margin-top: 20px;
+}
+
+.changer-mdp-menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.changer-mdp-menu-item:hover {
+  background-color: #34495e;
+}
+
+.changer-mdp-logout-container {
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 210px;
+}
+
+.changer-mdp-logout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Main Content Styles */
+.changer-mdp-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.changer-mdp-header {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #f39c12;
+}
+
+.changer-mdp-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.changer-mdp-title {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.changer-mdp-subtitle {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.changer-mdp-back-btn {
+  padding: 10px 20px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.changer-mdp-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.changer-mdp-error {
+  padding: 15px;
+  background-color: #fee;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  color: #721c24;
+  margin-bottom: 25px;
+}
+
+.changer-mdp-form {
+  display: grid;
+  gap: 25px;
+}
+
+.changer-mdp-form-group {
+  margin-bottom: 0;
+}
+
+.changer-mdp-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.changer-mdp-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.changer-mdp-security-tips {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.changer-mdp-tips-list {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.changer-mdp-buttons-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #ecf0f1;
+  padding-top: 25px;
+}
+
+.changer-mdp-submit-btn {
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 160px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.changer-mdp-submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.changer-mdp-cancel-btn {
+  padding: 15px 30px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 140px;
+}

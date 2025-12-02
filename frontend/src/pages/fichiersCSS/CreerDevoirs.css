@@ -1,0 +1,327 @@
+.creer-devoirs-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* Sidebar Styles */
+.creer-devoirs-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.creer-devoirs-sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.creer-devoirs-sidebar-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.creer-devoirs-sidebar-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #bdc3c7;
+}
+
+.creer-devoirs-nav {
+  margin-top: 20px;
+}
+
+.creer-devoirs-menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.creer-devoirs-menu-item.active {
+  background-color: #34495e;
+  border-left: 4px solid #3498db;
+}
+
+.creer-devoirs-menu-item:hover:not(.active) {
+  background-color: #34495e;
+}
+
+.creer-devoirs-logout-container {
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 210px;
+}
+
+.creer-devoirs-logout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Main Content Styles */
+.creer-devoirs-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.creer-devoirs-header {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #f39c12;
+}
+
+.creer-devoirs-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creer-devoirs-title {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.creer-devoirs-subtitle {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.creer-devoirs-header-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.creer-devoirs-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.creer-devoirs-form {
+  display: grid;
+  gap: 25px;
+}
+
+.creer-devoirs-form-group {
+  margin-bottom: 0;
+}
+
+.creer-devoirs-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.creer-devoirs-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.creer-devoirs-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.creer-devoirs-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.creer-devoirs-textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.creer-devoirs-select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.creer-devoirs-select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.creer-devoirs-file-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.creer-devoirs-file-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.creer-devoirs-file-help {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+.creer-devoirs-file-selected {
+  font-size: 14px;
+  color: #27ae60;
+  margin-top: 5px;
+}
+
+/* No Data States */
+.creer-devoirs-no-data {
+  padding: 15px;
+  border: 2px dashed #bdc3c7;
+  border-radius: 8px;
+  background-color: #fff3cd;
+  color: #856404;
+  text-align: center;
+}
+
+.creer-devoirs-no-data strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.creer-devoirs-no-data span {
+  font-size: 14px;
+}
+
+/* Buttons */
+.creer-devoirs-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-top: 1px solid #ecf0f1;
+  padding-top: 25px;
+}
+
+.creer-devoirs-submit-btn {
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 160px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.creer-devoirs-submit-btn:hover:not(:disabled) {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.creer-devoirs-submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.creer-devoirs-secondary-btn {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.creer-devoirs-secondary-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.creer-devoirs-tertiary-btn {
+  padding: 15px 30px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Info Box */
+.creer-devoirs-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1976d2;
+}

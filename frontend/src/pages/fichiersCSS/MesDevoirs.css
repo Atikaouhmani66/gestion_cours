@@ -1,0 +1,332 @@
+.mes-devoirs-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* Sidebar Styles */
+.mes-devoirs-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.mes-devoirs-sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.mes-devoirs-sidebar-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.mes-devoirs-sidebar-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #bdc3c7;
+}
+
+.mes-devoirs-nav {
+  margin-top: 20px;
+}
+
+.mes-devoirs-menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.mes-devoirs-menu-item.active {
+  background-color: #34495e;
+  border-left: 4px solid #3498db;
+}
+
+.mes-devoirs-logout-container {
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 210px;
+}
+
+.mes-devoirs-logout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Main Content Styles */
+.mes-devoirs-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.mes-devoirs-header {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #3498db;
+}
+
+.mes-devoirs-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mes-devoirs-title {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mes-devoirs-subtitle {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.mes-devoirs-new-btn {
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Empty State */
+.mes-devoirs-empty {
+  background-color: white;
+  padding: 60px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mes-devoirs-empty-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.mes-devoirs-empty-title {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.mes-devoirs-empty-text {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.mes-devoirs-empty-btn {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Loading State */
+.mes-devoirs-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.mes-devoirs-loading-content {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mes-devoirs-loading-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.mes-devoirs-loading-text {
+  color: #2c3e50;
+}
+
+/* Devoirs List */
+.mes-devoirs-list {
+  display: grid;
+  gap: 20px;
+}
+
+.mes-devoirs-item {
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #3498db;
+  transition: all 0.3s ease;
+}
+
+.mes-devoirs-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mes-devoirs-item-main {
+  flex: 1;
+}
+
+.mes-devoirs-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mes-devoirs-item-title {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.mes-devoirs-status {
+  padding: 4px 12px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.mes-devoirs-status.late {
+  background-color: #e74c3c;
+}
+
+.mes-devoirs-item-description {
+  margin: 0 0 15px 0;
+  color: #5d6d7e;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.mes-devoirs-item-details {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #7f8c8d;
+  flex-wrap: wrap;
+}
+
+.mes-devoirs-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mes-devoirs-detail-item.late {
+  color: #e74c3c;
+}
+
+.mes-devoirs-detail-item.file {
+  color: #3498db;
+}
+
+.mes-devoirs-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.mes-devoirs-action-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.mes-devoirs-action-btn.download {
+  background-color: #3498db;
+}
+
+.mes-devoirs-action-btn.view {
+  background-color: #95a5a6;
+}
+
+.mes-devoirs-action-btn.delete {
+  background-color: #e74c3c;
+}
+
+/* File Section */
+.mes-devoirs-file-section {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.mes-devoirs-file-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mes-devoirs-file-icon {
+  font-size: 18px;
+}
+
+.mes-devoirs-file-info {
+  flex: 1;
+}
+
+.mes-devoirs-file-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.mes-devoirs-file-download {
+  padding: 4px 12px;
+  background-color: transparent;
+  color: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 5px;
+}

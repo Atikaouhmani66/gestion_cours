@@ -1,0 +1,254 @@
+.notes-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* Sidebar Styles */
+.notes-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.notes-sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.notes-sidebar-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.notes-sidebar-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #bdc3c7;
+}
+
+.notes-nav {
+  margin-top: 20px;
+}
+
+.notes-menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.notes-menu-item.active {
+  background-color: #34495e;
+  border-left: 4px solid #3498db;
+}
+
+.notes-logout-container {
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 210px;
+}
+
+.notes-logout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Main Content Styles */
+.notes-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.notes-header {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #f39c12;
+}
+
+.notes-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.notes-title {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.notes-subtitle {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+/* Course Selection */
+.notes-course-selection {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.notes-course-title {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.notes-course-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.notes-no-courses {
+  padding: 20px;
+  border: 2px dashed #bdc3c7;
+  border-radius: 8px;
+  background-color: #fff3cd;
+  color: #856404;
+  text-align: center;
+}
+
+/* Notes Form */
+.notes-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.notes-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notes-form-title {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.notes-save-btn {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.notes-save-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.notes-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.notes-no-students {
+  padding: 30px;
+  border: 2px dashed #bdc3c7;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.notes-no-students-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.notes-no-students-title {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Table Styles */
+.notes-table-container {
+  overflow-x: auto;
+}
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notes-table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #e9ecef;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.notes-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.notes-student-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.notes-student-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notes-student-email {
+  color: #7f8c8d;
+}
+
+.notes-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+}
